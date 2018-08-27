@@ -13,3 +13,7 @@
 
 Route::get('/', 'ImedecSearch@index');
 Route::get('/action', 'ImedecSearch@action')->name('imedec_search.action');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
